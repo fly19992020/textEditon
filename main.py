@@ -1,6 +1,7 @@
 a = """"""
 th = 0
-file = open(input("请输入要保存的文件>>"), "w")
+file = open(input("Enter the address of the file to be imported>>"), "w")
+print("________________________________________")
 
 
 while True:
