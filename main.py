@@ -5,7 +5,7 @@ strs = {}    #head
 
 
 def h(a):
-    s = input(str(a))
+    s = input(str(a) + " ")
     strs[a] = s
     return 0
 
@@ -15,7 +15,7 @@ while True:
     n = input(str(th) + " ")
     if n == "QUIT":
         break
-    elif n[0] == "i":
+    elif n[0] == "I":
         h(n[1:])
         th -= 1
     else:
