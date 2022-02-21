@@ -1,3 +1,6 @@
+import os
+
+
 th = 0
 file = open(input("Enter the address of the file to be imported>>"), "w")
 print("__________")
@@ -18,6 +21,8 @@ while True:
     elif n[0] == "I":
         h(n[1:])
         th -= 1
+    elif n == "GAME":
+        os.system("python3 game.py")
     else:
         strs[str(th)] = n  #main
 
