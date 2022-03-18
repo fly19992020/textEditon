@@ -18,7 +18,7 @@ while True:
     n = input(str(th) + " ")
     if n == "QUIT":
         break
-    elif n[0] == "I":
+    elif n[0] == "CHANGE":
         h(n[1:])
         th -= 1
     elif n == "GAME":
