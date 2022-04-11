@@ -15,14 +15,16 @@ def h(a):
 
 while True:
     th += 1
-    n = input(str(th) + " ")
-    if n == "QUIT":
+    n = input(str(th) + ">>")
+    if n == "&QUIT":
         break
-    elif n[0] == "CHANGE":
+    elif n[0:5] == "&CHANGE":
         h(n[1:])
         th -= 1
-    elif n == "GAME":
+    elif n == "&GAME":
         os.system("python3 game.py")
+    elif n[0] == "|":
+        strs[str(th)] = n[1:] 
     else:
         strs[str(th)] = n  #main
 
